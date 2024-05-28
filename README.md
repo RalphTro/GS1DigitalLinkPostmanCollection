@@ -1,5 +1,7 @@
-# GS1DigitalLinkPostmanCollection
-Postman Collection with GS1 Digital Link Requests
+# GS1 Digital Link Postman Collection
+Postman Collection with a number of logically grouped GS1 Digital Link Requests. 
+
+**Speciality: all placeholder requests point to actual existing (though typically fictitious) web resources (e.g. web pages, JSON-LD files, etc.)!**
 
 ## Purpose
 This repo aims at helping in various areas, e.g.:
