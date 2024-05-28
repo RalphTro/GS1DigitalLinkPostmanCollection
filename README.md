@@ -8,7 +8,7 @@ This repo aims at helping in various areas, e.g.:
 * Speed up time for developers (e.g. in seeting up a test environment for GS1-compliant resolvers).
   
 ## Setup
-0. (If applicable) Register for (Postman)[https://postman.com/] and (recommended) install the desktop app.
+0. (If applicable) Register for [Postman](https://postman.com/) and (recommended) install the desktop app.
 1. Import the JSON file (`gs1_digital_link_requests.postman_collection.json`) via the `Import` button.
 2. Select a request and execute it via the `Send` button.
 
