@@ -10,7 +10,7 @@ This repo aims at helping in various areas, e.g.:
 
 * Demonstrate how GS1 Digital Link API requests work.
 * Show how GS1 Digital Link requests can be tailored to your/your organisation's needs.
-* Speed up time for developers (e.g. in seeting up a test environment for GS1-compliant resolvers).
+* Speed up time for developers (e.g. in setting up a test environment for GS1-compliant resolvers).
   
 ## Setup
 
