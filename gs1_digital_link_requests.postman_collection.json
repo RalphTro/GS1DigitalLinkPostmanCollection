@@ -1,0 +1,461 @@
+{
+	"info": {
+		"_postman_id": "b6c56adc-4691-440d-9411-3c9fb534eff8",
+		"name": "gs1_digital_link_requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18538484"
+	},
+	"item": [
+		{
+			"name": "get_default",
+			"item": [
+				{
+					"name": "default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://id.gs1.de/01/04012345999969",
+							"protocol": "https",
+							"host": [
+								"id",
+								"gs1",
+								"de"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "default_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://id.gs1.de/01/04012345999969",
+							"protocol": "https",
+							"host": [
+								"id",
+								"gs1",
+								"de"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "default_ja",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ja"
+							}
+						],
+						"url": {
+							"raw": "https://id.gs1.de/01/04012345999969",
+							"protocol": "https",
+							"host": [
+								"id",
+								"gs1",
+								"de"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "default_de",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de"
+							}
+						],
+						"url": {
+							"raw": "https://id.gs1.de/01/04012345999969",
+							"protocol": "https",
+							"host": [
+								"id",
+								"gs1",
+								"de"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get_linkset",
+			"item": [
+				{
+					"name": "linktype_all",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"connection": true,
+							"accept-encoding": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/linkset+json"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=all",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "linktype_linkset",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"connection": true,
+							"accept-encoding": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/linkset+json"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=linkset",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "linkset"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get_specific_links",
+			"item": [
+				{
+					"name": "relatedImage_jpg_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "image/jpeg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:relatedImage",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:relatedImage"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "relatedImage_svg_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "image/svg+xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:relatedImage",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:relatedImage"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "masterData_jsonld_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:masterData",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:masterData"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "masterData_jsonld_de",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:masterData",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:masterData"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "masterData_jsonld_es",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "es",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:masterData",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:masterData"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promotion",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "certificationInfo_pdf_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:certificationInfo",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:certificationInfo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "certificationInfo_jsonld_en",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://resolver-st.gs1.org/01/04012345999969?linkType=gs1:certificationInfo",
+							"protocol": "https",
+							"host": [
+								"resolver-st",
+								"gs1",
+								"org"
+							],
+							"path": [
+								"01",
+								"04012345999969"
+							],
+							"query": [
+								{
+									"key": "linkType",
+									"value": "gs1:certificationInfo"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
